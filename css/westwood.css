@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-04-16 15:10:06
+ * @version $Id$
+ */
+body{
+ 	font-family: "Microsoft YaHei","微软雅黑","sans-serif";
+ 	color: #fff;
+ 	background-color: #000;
+ 	padding-top: 70px;
+}
