@@ -9,11 +9,82 @@ body{
  	font-family: "Microsoft YaHei","微软雅黑","sans-serif";
  	color: #fff;
  	background-color: #000;
- 	padding-top: 70px;
 }
 a, a:focus, a:hover {
 	color: #fff;
 }
-.bars-ul{
-	
+*{
+	padding: 0;
+	margin: 0;
+}
+#bars,#con,#foot{
+	/*padding-top: 30px;*/
+	width: 1000px;
+	margin: 0px auto;
+}
+#bars{
+	padding-top: 30px;
+}
+#bars > ul > li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 15px;
+	line-height: 51px;
+}
+#logo-top{
+	display: inline-block;
+}
+#bars-list{
+	display: inline-block;
+	float: right;
+}
+#bars-list >li > a{
+	font-size: 16px;
+	font-weight: 100;
+	padding-bottom: 5px;
+	opacity: 0.7;
+	filter:Alpha(opacity=70);
+}
+#bars-list >li > a:hover{
+	text-decoration: none;
+	border-bottom: solid 2px #494949;
+}
+#bars-list #bars-tag > a{
+	border-bottom: solid 2px #fff;
+	opacity: 1;
+	filter:Alpha(opacity=100);
+}
+#bars-list .group{
+	position: relative;
+}
+#bars-list .group .yuyan{
+	margin-top: -10px;
+	position: absolute;
+	/*width: 30px;*/
+	line-height: 26px;
+	display: none;
+}
+#con{
+	padding-top: 50px;
+}
+#kouhao{
+	padding: 80px 0;
+}
+#kouhao blockquote > p{
+	font-weight: 100;
+	font-size: 28px;
+}
+#foot{
+	padding-bottom: 50px;
+}
+.foot-block{
+	display: inline-block;
+	float: left;
+	opacity: 0.7;
+	filter:Alpha(opacity=70);
+}
+.foot-inf{
+	border-left: solid 1px #787878;
+	margin-left: 30px;
+	padding-left: 30px;
 }
