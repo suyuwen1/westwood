@@ -11,3 +11,9 @@ body{
  	background-color: #000;
  	padding-top: 70px;
 }
+a, a:focus, a:hover {
+	color: #fff;
+}
+.bars-ul{
+	
+}

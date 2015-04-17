@@ -11,39 +11,21 @@
 	<link href="css/westwood.css" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<!-- <a class="navbar-brand" href="#">Brand</a> -->
-				<a href="#"><img class="navbar-brand" src="img/logo.png"></a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">首页</a></li>
-					<li><a href="#about">重奏篇</a></li>
-					<li><a href="#contact">教学篇</a></li>
-					<li><a href="#contact">互动篇</a></li>
-					<li><a href="#contact">资料库</a></li>
-					<li><a href="#contact">大事记</a></li>
-					<li><a href="#contact">关于我们</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">中文</a></li>
-					<li><a href="#">英文</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-</nav>
-
-<script src="js/jquery-1.11.2.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/westwood.js"></script>
+	<div id="bars">
+		<ul class="bars-ul">
+			<li><a href="#">首页</a></li>
+			<li><a href="#about">重奏篇</a></li>
+			<li><a href="#contact">教学篇</a></li>
+			<li><a href="#contact">互动篇</a></li>
+			<li><a href="#contact">资料库</a></li>
+			<li><a href="#contact">大事记</a></li>
+			<li><a href="#contact">关于我们</a></li>
+			<li><div class="group"><a>中文<span class="caret"></span></a><a href="#">英文</a></div>
+			</li>
+		</ul>
+	</div>
+	<script src="js/jquery-1.11.2.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/westwood.js"></script>
 </body>
 </html>
