@@ -17,7 +17,7 @@ a, a:focus, a:hover {
 	padding: 0;
 	margin: 0;
 }
-#bars,#con,#foot{
+#bars,#con,#foot,#bars-con{
 	/*padding-top: 30px;*/
 	width: 1000px;
 	margin: 0px auto;
@@ -74,6 +74,43 @@ a, a:focus, a:hover {
 	font-weight: 100;
 	font-size: 28px;
 }
+#bars-con{
+	font-weight: 100;
+}
+.bars-con-title{
+	padding-bottom: 30px;
+	font-size: 26px;
+}
+.row-cen{
+	text-align: center;
+}
+.bars-con-con{
+	padding: 30px 0;
+	font-size: 16px;
+	text-indent: 2em;
+}
+.bars-con-con .tt{
+	padding: 20px 0;
+}
+.jxp-w{
+	width: 1000px;
+	height: 167px;
+	overflow: hidden;
+	position: relative;
+}
+.jxp-con{
+	position: absolute;
+	height: 167px;
+	width: 1359px;
+}
+.jxp-con img{
+	padding: 0 10px;
+}
+#footer{
+	border-top: solid 1px #3B3B3B;
+	background-color: #232323;
+	padding-top: 30px;
+}
 #foot{
 	padding-bottom: 50px;
 }
@@ -86,5 +123,5 @@ a, a:focus, a:hover {
 .foot-inf{
 	border-left: solid 1px #787878;
 	margin-left: 30px;
-	padding-left: 30px;
+	padding: 0 30px;
 }
