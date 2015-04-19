@@ -4,9 +4,7 @@
  * @date    2015-04-16 15:10:19
  * @version $Id$
  */
-$(function(){
-	jxp_scroll_init();
-})
+
 var s_t='';
 var imgs=$(".jxp-con img");
 var jxp_con_w=$(".jxp-con").width();

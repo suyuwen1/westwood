@@ -9,6 +9,7 @@ body{
  	font-family: "Microsoft YaHei","微软雅黑","sans-serif";
  	color: #fff;
  	background-color: #000;
+ 	font-size: 14px;
 }
 a, a:focus, a:hover {
 	color: #fff;
@@ -25,7 +26,14 @@ a, a:focus, a:hover {
 #bars{
 	padding-top: 30px;
 }
-#bars > ul > li{
+#bars > ul {
+	padding: 0;
+	margin: 0;
+}
+#bars > ul >li{
+	list-style-type: none;
+} 
+#bars #bars-list > li{
 	list-style-type: none;
 	display: inline-block;
 	padding: 0 15px;
@@ -33,6 +41,7 @@ a, a:focus, a:hover {
 }
 #logo-top{
 	display: inline-block;
+	float: left;
 }
 #bars-list{
 	display: inline-block;
@@ -69,6 +78,17 @@ a, a:focus, a:hover {
 }
 #kouhao{
 	padding: 80px 0;
+}
+#kouhao blockquote {
+	font-family: inherit;
+}
+#kouhao blockquote > small:before{
+	content: '\2014 \00A0';
+}
+#kouhao blockquote > small{
+	text-align: left;
+	font-style: italic;
+	padding-top: 10px;
 }
 #kouhao blockquote > p{
 	font-weight: 100;
@@ -124,4 +144,16 @@ a, a:focus, a:hover {
 	border-left: solid 1px #787878;
 	margin-left: 30px;
 	padding: 0 30px;
+}
+.am-align-left > img{
+	width: 150px;
+}
+.cyjs-font{
+	font-size: 16px;
+	font-weight: 100;
+	padding-bottom: 50px;
+}
+.cyjs-top-p{
+	padding-top: 50px;
+	font-weight: 100;
 }
