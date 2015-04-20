@@ -62,14 +62,14 @@ function all_scroll_up(){
 	$(window).scroll(function(){
 		t=$(this).scrollTop();
 		if (t>=100) {
-			$(".am-icon-arrow-up").css("display",'block');
+			$(".s-up").css("display",'block');
 		}else{
-			$(".am-icon-arrow-up").hide();
+			$(".s-up").hide();
 		}
 	})
 }
 function all_scroll_up_button(){
-	$(".am-icon-arrow-up").click(function(event) {
+	$(".s-up").click(function(event) {
 		// console.log('1');
 		$('html,body').animate({scrollTop:0}, 'fast');
 	});
