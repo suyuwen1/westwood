@@ -18,7 +18,7 @@ a, a:focus, a:hover {
 	padding: 0;
 	margin: 0;
 }
-#bars,#con,#foot,#bars-con{
+#bars,#con,#con1,#foot,#bars-con{
 	/*padding-top: 30px;*/
 	width: 1000px;
 	margin: 0px auto;
@@ -66,15 +66,25 @@ a, a:focus, a:hover {
 #bars-list .group{
 	position: relative;
 }
-#bars-list .group .yuyan{
-	margin-top: -10px;
-	position: absolute;
-	/*width: 30px;*/
+.yuyan-sel{
+	background-color: #2D2D2D;
 	line-height: 26px;
+}
+#bars-list .group .yuyan{
+	position: absolute;
+	left: 0px;
+	top: 40px;
 	display: none;
 }
 #con{
 	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#con1{
+	padding-top: 50px;
+}
+#bars-con{
+	padding-bottom: 50px;
 }
 #kouhao{
 	padding: 80px 0;
@@ -164,6 +174,7 @@ a, a:focus, a:hover {
 	top: 20px;
 	padding: 0;
 }
+
 .con-about .am-u-sm-2{
 	padding-left: 50px;
 }
@@ -206,4 +217,7 @@ a, a:focus, a:hover {
 }
 .scroll-list .am-icon-arrow-up{
 	display: none;
+}
+#your-modal{
+	color: #1E1E1E;
 }

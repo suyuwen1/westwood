@@ -6,6 +6,8 @@
  */
  $(function(){
  	all_scroll_init();
+ 	yuyan_sel ();
+ 	scroll_weixin();
  })
 // 图片水平轮播 开始
 var s_t='';
@@ -73,3 +75,21 @@ function all_scroll_up_button(){
 	});
 }
 // 向上滚动 结束
+
+//语言选择 开始
+function yuyan_sel () {
+	$("#yuyan-sel").hover(function() {
+		$("#bars-list .group .yuyan").addClass('yuyan-sel').show();
+	}, function() {
+		$("#bars-list .group .yuyan").removeClass('yuyan-sel').hide();
+	});
+}
+//语言选择 结束
+
+//微信弹窗 开始
+function scroll_weixin(){
+	$(".scroll-list .am-icon-weixin").click(function(event) {
+		$('#your-modal').modal();
+	});
+}
+//微信弹窗 结束
