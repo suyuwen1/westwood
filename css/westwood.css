@@ -13,6 +13,7 @@ body{
 }
 a, a:focus, a:hover {
 	color: #fff;
+	outline: none;
 }
 *{
 	padding: 0;
@@ -157,6 +158,9 @@ a, a:focus, a:hover {
 	margin-left: 30px;
 	padding: 0 30px;
 }
+.am-align-left {
+	margin-right:1em\9;
+}
 .am-align-left > img{
 	width: 150px;
 }
@@ -176,11 +180,9 @@ a, a:focus, a:hover {
 	padding: 0;
 }
 
-.con-about .am-u-sm-2{
-	padding-left: 50px;
-}
-.con-about .am-g{
-	padding-bottom: 20px;
+.con-about {
+	font-size: 16px;
+	font-weight: 100;
 }
 .about-js{
 	margin: 50px 0;
@@ -202,14 +204,13 @@ a, a:focus, a:hover {
 }
 .contact-con .am-u-sm-6-right{
 	padding-left: 50px;
+	*float: right;
 }
 .contact-con-img{
 	margin-bottom: 50px;
 }
 .scroll-list{
 	position: absolute;
-	right: -80px;
-	bottom: 300px;
 	z-index: 1000;
 }
 .scroll-list > a{
@@ -218,10 +219,44 @@ a, a:focus, a:hover {
 	width: 50px;
 	height: 50px;
 	/*cursor: pointer;*/
+	outline: none;
 }
-.scroll-list .am-icon-arrow-up{
+.scroll-list > a:hover{
+	opacity: 0.9;
+	filter:Alpha(opacity=90);
+}
+.scroll-list .s-up{
 	display: none;
 }
-#your-modal{
+#tc-weixin{
+	background-color: #fff;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -270px;
+	margin-top: -150px;
+	width: 540px;
+	height: 300px;
 	color: #1E1E1E;
+	z-index: 1100;
+	text-align: center;
+	font-weight: 100;
+	display: none;
+}
+.tc-weixin-title{
+	font-size: 18px;
+	padding: 15px;
+	position: relative;
+}
+.am-close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.am-u-sm-4{
+	width: 333px\9;
+}
+.contact-con .am-u-sm-6 {
+	width: 50%\9;
+	*width: 45%;
 }

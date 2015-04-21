@@ -49,13 +49,34 @@ function jxp_scroll_hover(){
 // 图片水平轮播 结束
 // 向上滚动 开始
 function all_scroll_init(){
+	var n=0;
 	all_scroll_fixed ();
 	all_scroll_up_button();
+	all_scroll_up();
+
+	$(window).resize(function(event) {
+		if(n%2==0){
+		all_scroll_fixed ();
+		// console.log("1");
+		}
+		n++;
+	});
 }
 function all_scroll_fixed () {
-	var list=$(".scroll-list").offset();
-	$(".scroll-list").css({"left":list.left,"position":"fixed"});
-	all_scroll_up();
+	var a;
+	var doc=$(document).width();
+	if (doc>1180) {
+		a=80;
+	}else if(doc>1080 && doc<=1180){
+		a=30;
+	}else{
+		a=-10;
+	}
+	$(".scroll-list").css({"right":((doc-1000)/2-a),"bottom":300,"position":"fixed"});
+	// console.log(doc);
+	// var list=$(".scroll-list").offset();
+	// $(".scroll-list").css({"left":list.left,"position":"fixed"});
+	
 }
 function all_scroll_up(){
 	var t;
@@ -88,8 +109,15 @@ function yuyan_sel () {
 
 //微信弹窗 开始
 function scroll_weixin(){
-	$(".scroll-list .am-icon-weixin").click(function(event) {
-		$('#your-modal').modal();
+	$(document).click(function(event) {
+		var t=$(event.target);
+		if (t.closest('.scroll-weixin').length==1) {
+			$('#tc-weixin').show("fast");
+		}else if (t.closest('.am-close').length==1) {
+			$('#tc-weixin').hide("fast");
+		}else if (t.closest('#tc-weixin').length==0 && t.closest('.scroll-weixin').length==0) {
+			$('#tc-weixin').hide("fast");
+		}
 	});
 }
 //微信弹窗 结束
